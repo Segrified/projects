@@ -1,6 +1,6 @@
 using System;
 
-//Base parent class for the activiy subclasses
+//Child of the Activity Class, Gives the user a prompt and questions to think about
 class ReflectionActivity : Activity
 {
     List<string> _prompts = new List<string>();

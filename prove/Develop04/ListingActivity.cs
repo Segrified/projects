@@ -1,6 +1,6 @@
 using System;
 
-//Base parent class for the activiy subclasses
+//Child of the Activity Class, Allows the user to input answers to a prompt for the given duration
 class ListingActivity : Activity
 {
     List<string> _prompts = new List<string>();
@@ -9,6 +9,7 @@ class ListingActivity : Activity
         _activityType = "Listing Activity";
         _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
 
+        //Prompts for the activity
         _prompts.Add("Who are people that you appreciate?");
         _prompts.Add("What are personal strengths of yours?");
         _prompts.Add("Who are people that you have helped this week?");
@@ -16,12 +17,14 @@ class ListingActivity : Activity
         _prompts.Add("Who are some of your personal heroes?");
     }
 
+    //gets a random prompt from the list
     public string GetPrompt() {
         Random pick = new Random();
         string randPrompt = _prompts[pick.Next(0, 4)];
         return randPrompt;
     }
 
+    //loops the listing activity for the given duration
     public void ListingLoop() {
         Console.Clear();
         Console.WriteLine("Get Ready...");
@@ -37,6 +40,7 @@ class ListingActivity : Activity
 
         int count = 0;
 
+        //loop
         do {
         Console.Write("> ");
         Console.ReadLine();

@@ -1,6 +1,6 @@
 using System;
 
-//Base parent class for the activiy subclasses
+//Child of Activity Class, loops a breathe in and breathe out prompt for the duration
 class BreathingActivity : Activity
 {
     public BreathingActivity() : base() {
@@ -8,6 +8,7 @@ class BreathingActivity : Activity
         _description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
     }
 
+    //Loops the breathing activity for the given duration
     public void BreathingLoop() {
         Console.Clear();
         Console.WriteLine("Get Ready...");
