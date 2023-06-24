@@ -5,6 +5,7 @@ public abstract class Shape {
 
     public Shape(string color) {
         _color = color;
+        Console.WriteLine("Parent Class");
     }
 
     public string GetColor() {

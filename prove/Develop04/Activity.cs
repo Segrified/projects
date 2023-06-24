@@ -7,6 +7,10 @@ class Activity
     protected string _activityType;
     protected string _description;
 
+    public Activity() {
+        Console.WriteLine("Base Class");
+    }
+
     //gives the intro format as a string
     public string GetIntro() {
         return "Welcome to the " + _activityType + ".\n\n" + _description + "\n\nHow long, in seconds, would you like for your session? ";

@@ -5,6 +5,7 @@ class Square : Shape{
 
     public Square(string color, double side) : base(color) {
         _side = side;
+        Console.WriteLine("Child Class");
     }
 
     public  override double GetArea() {

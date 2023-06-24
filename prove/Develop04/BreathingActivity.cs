@@ -6,6 +6,7 @@ class BreathingActivity : Activity
     public BreathingActivity() : base() {
         _activityType = "Breathing Activity";
         _description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
+        Console.WriteLine("Child Class");
     }
 
     //Loops the breathing activity for the given duration
